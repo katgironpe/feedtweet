@@ -3,6 +3,10 @@ require 'htmlentities'
 
 class FeedReader
   class << self
+    def decode(string)
+      HTMLEntities.new.decode(string)
+    end
+
     def feeds
       YAML.load_file('./config/feeds.yml')['feeds']
     end
