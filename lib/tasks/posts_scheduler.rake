@@ -1,5 +1,3 @@
-require './app/jobs/fetch_post_job'
-
 desc 'Retrieve new posts'
 task save_posts: :environment do
   puts 'Saving Posts ...'
