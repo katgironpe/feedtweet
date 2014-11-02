@@ -1,0 +1,9 @@
+title: <%= ENV['SITE_TITLE'] %>
+twitter:
+  consumer_key: <%= ENV['TWITTER_CONSUMER_TOKEN'] %>
+  consumer_secret: <%= ENV['TWITTER_CONSUMER_SECRET'] %>
+  access_token: <%= ENV['TWITTER_ACCESS_KEY'] %>
+  access_secret: <%= ENV['TWITTER_ACCESS_SECRET'] %>
+bitly:
+  login: <%= ENV['BITLY_LOGIN'] %>
+  key: <%= ENV['BITLY_KEY'] %>

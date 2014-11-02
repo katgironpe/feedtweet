@@ -1,0 +1,3 @@
+describe FeedReader do
+
+end
