@@ -56,3 +56,11 @@ bitly:
 ## Deploying on Heroku
 
 Use `heroku config:set` to set config variables.
+
+### Set up Sidekiq
+
+Add REDISTOGO add-on (FREE).
+
+```bash
+heroku config:set REDIS_PROVIDER=REDISTOGO_URL
+```
