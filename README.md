@@ -55,4 +55,4 @@ bitly:
 
 ## Deploying on Heroku
 
-Use `heroku config:set` to set config variables. 
+Use `heroku config:set` to set config variables.
