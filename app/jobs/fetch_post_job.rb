@@ -1,4 +1,4 @@
-require './lib/feed_reader'
+require './app/consumers/feed_reader'
 
 class FetchPostJob < ActiveJob::Base
   queue_as :default
