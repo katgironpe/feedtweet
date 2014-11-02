@@ -57,6 +57,20 @@ bitly:
 
 Use `heroku config:set` to set config variables.
 
+Please check `config/settings/production.yml`
+
+```ruby
+title: <%= ENV['SITE_TITLE'] %>
+twitter:
+  consumer_key: <%= ENV['TWITTER_CONSUMER_KEY'] %>
+  consumer_secret: <%= ENV['TWITTER_CONSUMER_SECRET'] %>
+  access_token: <%= ENV['TWITTER_ACCESS_TOKEN'] %>
+  access_secret: <%= ENV['TWITTER_ACCESS_SECRET'] %>
+bitly:
+  login: <%= ENV['BITLY_LOGIN'] %>
+  key: <%= ENV['BITLY_KEY'] %>
+```
+
 ### Set up Sidekiq
 
 Add REDISTOGO add-on (FREE).
