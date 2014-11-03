@@ -23,6 +23,16 @@ Shortens URL's before tweeting the post
 
 This app uses ActiveJob and Sidekiq to retrieve, save posts and tweet them later.
 
+## Getting Started
+
+Clone the application
+
+```bash
+git clone --depth 1 git://github.com/katgironpe/feedtweet.git myapp
+rm -rf .git
+rm README.md
+```
+
 ## Configuration
 
 Create the PostgreSQL databases
@@ -77,4 +87,16 @@ Add REDISTOGO add-on (FREE).
 
 ```bash
 heroku config:set REDIS_PROVIDER=REDISTOGO_URL
+```
+
+
+### Schedule tasks
+
+Add **Heroku Scheduler**
+
+The rake tasks are as follows:
+
+```bash
+rake save_posts                         # Retrieve new posts
+rake tweet_posts                        # Tweet posts with Short URL
 ```
