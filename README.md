@@ -23,6 +23,12 @@ Shortens URL's before tweeting the post
 
 This app uses ActiveJob and Sidekiq to retrieve, save posts and tweet them later.
 
+## Limitations
+
+I just created this as an example application as requested.
+Its limitations include the fact that it doesn't support filtering.
+I may not update this app in the future.
+
 ## Getting Started
 
 Clone the application
