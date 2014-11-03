@@ -1,4 +1,4 @@
-# News Tweet
+# FeedTweet
 
 Tweet posts from various RSS feeds to a Twitter account.
 
@@ -52,6 +52,10 @@ Run command for migration
 ```bash
 rake db:migrate
 ```
+
+### Add/remove feeds
+
+You need to update `config/feeds.yml`
 
 ### Configuration for development environment
 
