@@ -18,7 +18,3 @@ Rails.application.config.generators do |g|
     request_specs: false,
     routing_specs: false
 end
-
-Rails.application.configure do
-  config.active_job.queue_adapter = :sidekiq
-end
